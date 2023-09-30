@@ -1,6 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-
-
-
+dir = 2
+vel = 0
+velstart = 0.1
+velcap = 6
+velinc = 1 + (1/2)
