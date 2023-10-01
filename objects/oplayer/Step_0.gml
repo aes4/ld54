@@ -3,7 +3,7 @@ if (keyboard_check(ord("W"))) {
 		vel += velstart
 		vel *= velinc
 	}
-    if !place_meeting(x, y - vel, otopend) && !place_meeting(x, y - vel, osides) { y -= vel }
+    if !place_meeting(x, y - vel, otopend) && !place_meeting(x, y - vel, osides) && !place_meeting(x, y - vel, owall1) && !place_meeting(x, y - vel, owall2) && !place_meeting(x, y - vel, owall3) { y -= vel }
 	if place_meeting(x, y - vel, otunnel) {
 		opersistent.left = 0
 		// save current state of room and reset
@@ -46,7 +46,7 @@ if (keyboard_check(ord("S"))) {
 		vel += velstart
 		vel *= velinc
 	}
-	if !place_meeting(x, y + vel, obottomend) && !place_meeting(x, y + vel, osides) { y += vel }
+	if !place_meeting(x, y + vel, obottomend) && !place_meeting(x, y + vel, osides) && !place_meeting(x, y + vel, owall1) && !place_meeting(x, y + vel, owall2) && !place_meeting(x, y + vel, owall3) { y += vel }
 	if place_meeting(x, y + vel, otunnel) {
 		opersistent.left = 2
 		if !opersistent.walked {
@@ -87,7 +87,7 @@ if (keyboard_check(ord("A"))) {
 		vel += velstart
 		vel *= velinc
 	}
-	if !place_meeting(x - vel, y, osides) && !place_meeting(x - vel, y, otopend) && !place_meeting(x - vel, y, obottomend) { x -= vel }
+	if !place_meeting(x - vel, y, osides) && !place_meeting(x - vel, y, otopend) && !place_meeting(x - vel, y, obottomend) && !place_meeting(x - vel, y, owall1) && !place_meeting(x - vel, y, owall2) && !place_meeting(x - vel, y, owall3) { x -= vel }
 	if place_meeting(x - vel, y, otunnel) {
 		opersistent.left = 3
 		if !opersistent.walked {
@@ -128,7 +128,7 @@ if (keyboard_check(ord("D"))) {
 		vel += velstart
 		vel *= velinc
 	}
-	if !place_meeting(x + vel, y, osides) && !place_meeting(x + vel, y, otopend) && !place_meeting(x + vel, y, obottomend) { x += vel }
+	if !place_meeting(x + vel, y, osides) && !place_meeting(x + vel, y, otopend) && !place_meeting(x + vel, y, obottomend) && !place_meeting(x + vel, y, owall1) && !place_meeting(x + vel, y, owall2) && !place_meeting(x + vel, y, owall3) { x += vel }
 	if place_meeting(x + vel, y, otunnel) {
 		opersistent.left = 1
 		if !opersistent.walked {
@@ -165,6 +165,10 @@ if (keyboard_check(ord("D"))) {
     sprite_index = splayerr
 }
 if place_meeting(x, y, otopend) && place_meeting(x, y, obottomend) {  // game end (crushed)
+}
+if place_meeting(x, y, owall3) && place_meeting(x, y, owall1) {
+}
+if place_meeting(x, y, owall3) && place_meeting(x, y, owall2) {
 }
 // if destroy enemy opersistent.r.enemies remove from array? and room creation code adds enemies to opers.r.enemies/items/decor
 opersistent.r.t += 1

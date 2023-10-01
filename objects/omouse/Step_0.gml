@@ -14,39 +14,32 @@ if instance_exists(obsettings) {
     	}
     }
 }
-//if instance_exists(obquit) {
-//    if (place_meeting(x, y, obquit)) {
-//    	if (mouse_button == mb_left || mouse_button == mb_right) {
-//    	    game_end()
-//        }
-//    }
-//}
-//if instance_exists(obdebug) {
-//    if (place_meeting(x, y, obdebug)) {
-//    	if (mouse_button == mb_left || mouse_button == mb_right) {
-//    		opersistent.debug = true
-//    	}
-//    }
-//}
-//if instance_exists(obmainmenu) {
-//    if (place_meeting(x, y, obmainmenu)) {
-//    	if (mouse_button == mb_left || mouse_button == mb_right) {
-//    		room_goto(rmainmenu)
-//            audio_stop_sound(opersistent.tr)
-//            opersistent.trt = true
-//    	}
-//    }
-//}
-//if (place_meeting(x, y, obincvol)) {
-//	if (mouse_button == mb_left || mouse_button == mb_right) {
-//		opersistent.vol += 0.1
-//	}
-//}
-//if (place_meeting(x, y, obdecvol)) {
-//	if (mouse_button == mb_left || mouse_button == mb_right) {
-//		if opersistent.vol > 0 opersistent.vol -= 0.1
-//	}
-//}
+if instance_exists(obquit) {
+    if (place_meeting(x, y, obquit)) {
+    	if (mouse_check_button(mb_left) ||  mouse_check_button(mb_right)) {
+    	    game_end()
+        }
+    }
+}
+if instance_exists(obmainmenu) {
+    if (place_meeting(x, y, obmainmenu)) {
+    	if (mouse_check_button(mb_left) ||  mouse_check_button(mb_right)) {
+    		room_goto(rmainmenu)
+            audio_stop_sound(opersistent.tr)
+            opersistent.trt = true
+    	}
+    }
+}
+if (place_meeting(x, y, obincvol)) {
+	if (mouse_button == mb_left || mouse_button == mb_right) {
+		opersistent.vol += 0.1
+	}
+}
+if (place_meeting(x, y, obdecvol)) {
+	if (mouse_button == mb_left || mouse_button == mb_right) {
+		if opersistent.vol > 0 opersistent.vol -= 0.1
+	}
+}
 //if (place_meeting(x, y, oscard)) {
 //	if (mouse_button == mb_left) {
 //        if (oplayer.coin >= oplayer.speedprice) {
@@ -67,4 +60,4 @@ if instance_exists(obsettings) {
 //        }
 //	}
 //}
-//if opersistent.vol < 0 opersistent.vol = 0
+if opersistent.vol < 0 opersistent.vol = 0

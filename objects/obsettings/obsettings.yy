@@ -25,7 +25,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "ssettings",
+    "path": "sprites/ssettings/ssettings.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

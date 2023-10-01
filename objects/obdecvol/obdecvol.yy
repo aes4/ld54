@@ -25,7 +25,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "sdecvol",
+    "path": "sprites/sdecvol/sdecvol.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

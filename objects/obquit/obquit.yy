@@ -25,7 +25,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "squit",
+    "path": "sprites/squit/squit.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

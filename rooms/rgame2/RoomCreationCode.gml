@@ -43,4 +43,4 @@ for (i = 0; i < array_length(opersistent.rooms); i++) {
 		}
 	}
 }
-instance_create_layer(0, 0, "l2", odebug)
+//instance_create_layer(0, 0, "l2", odebug)

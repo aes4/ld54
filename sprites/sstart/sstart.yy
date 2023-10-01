@@ -5,7 +5,7 @@
   "bbox_bottom": 48,
   "bbox_left": 0,
   "bbox_right": 63,
-  "bbox_top": 4,
+  "bbox_top": 3,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "buttons",
+    "path": "folders/Sprites/buttons.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

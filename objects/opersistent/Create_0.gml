@@ -16,3 +16,6 @@ r = {
 rooms = []
 left = 0  // tunnel direction
 walked = false
+vol = 0.8
+trt = true
+tr = false
