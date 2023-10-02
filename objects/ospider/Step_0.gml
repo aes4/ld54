@@ -3,6 +3,9 @@ move_towards_point(oplayer.x, oplayer.y, 4)
 if place_meeting(x, y, oclaw) {
 	hp -= 3
 }
+if place_meeting(x, y, ofire) {
+	hp -= 30
+}
 if place_meeting(x, y, oplayer) {
 	oplayer.hp -= 0.5
 }

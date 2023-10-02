@@ -213,6 +213,27 @@ if (keyboard_check_pressed(ord("F"))) {
 			break
 	}
 }
+if keyboard_check_pressed(ord("R")) && fire {
+	switch dir {
+		case 0:
+			instance_create_layer(x, y - 180, opersistent.ly, ofire)
+			ofire.sprite_index = sfireu
+			break
+		case 1:
+			instance_create_layer(x + 180, y, opersistent.ly, ofire)
+			ofire.sprite_index = sfirer
+			break
+		case 2:
+			instance_create_layer(x, y + 180, opersistent.ly, ofire)
+			ofire.sprite_index = sfired
+			break
+		case 3:
+			instance_create_layer(x - 180, y, opersistent.ly, ofire)
+			ofire.sprite_index = sfirel
+			break
+	}
+	fire = false
+}
 
 // DO NOT HOLD E THEN ENTER ROOM THEN LET GO
 

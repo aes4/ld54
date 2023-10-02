@@ -82,6 +82,11 @@ if !opersistent.walked {
 		instance_create_layer(room_width/2, room_height/2, opersistent.ly, oped)
 		instance_create_layer(room_width/2, room_height/2 - 40, opersistent.ly, ohealthpotion)
 	}
+	
+	if round(random_range(1, 12)) == 3 {
+		instance_create_layer(room_width/2, room_height/2, opersistent.ly, oped)
+		instance_create_layer(room_width/2, room_height/2 - 40, opersistent.ly, ofirecrystal)
+	}
 	var pls = round(random_range(1, 4))
 	switch opersistent.rdir {
 		case 0:

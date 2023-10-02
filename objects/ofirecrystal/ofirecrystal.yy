@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "ohealthpotion",
+  "name": "ofirecrystal",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "shealthpotion",
-    "path": "sprites/shealthpotion/shealthpotion.yy",
+    "name": "sfirecrystal",
+    "path": "sprites/sfirecrystal/sfirecrystal.yy",
   },
   "spriteMaskId": null,
   "visible": true,
