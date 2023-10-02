@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sincvol",
-  "bbox_bottom": 0,
+  "bbox_bottom": 105,
   "bbox_left": 0,
-  "bbox_right": 0,
+  "bbox_right": 85,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e9e2bdfb-e720-4595-8a16-0641b335b3e2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"acb54003-a82e-4f6f-8826-ae9c72a98f97",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 64,
+  "height": 106,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1b09d854-cb8d-46f2-99bf-d823b1544593","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ff36546c-a8c9-46e2-9d8e-f7a711524dba","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e9e2bdfb-e720-4595-8a16-0641b335b3e2","path":"sprites/sincvol/sincvol.yy",},},},"Disabled":false,"id":"3deb678f-b8d6-459e-bf3d-8f3f68a56652","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"acb54003-a82e-4f6f-8826-ae9c72a98f97","path":"sprites/sincvol/sincvol.yy",},},},"Disabled":false,"id":"30855138-6906-477c-9c15-72b54daaf220","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 64,
+  "width": 86,
 }

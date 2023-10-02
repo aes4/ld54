@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sdecvol",
-  "bbox_bottom": 0,
+  "bbox_bottom": 105,
   "bbox_left": 0,
-  "bbox_right": 0,
+  "bbox_right": 85,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"671dcc4d-2003-4918-861d-6dc88e75d64a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bc2c2009-4a0a-4e1d-921a-c374b22234e9",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 64,
+  "height": 106,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e512992d-cb6b-417c-ae14-56ffe2f98926","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d00bd211-1500-4b39-b1b7-ab034f227e0c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"671dcc4d-2003-4918-861d-6dc88e75d64a","path":"sprites/sdecvol/sdecvol.yy",},},},"Disabled":false,"id":"94db1fd7-1688-4bff-a0cf-5fcc67b7da92","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bc2c2009-4a0a-4e1d-921a-c374b22234e9","path":"sprites/sdecvol/sdecvol.yy",},},},"Disabled":false,"id":"1327aea1-5c9d-47df-b9f4-1ddc5568f660","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 64,
+  "width": 86,
 }

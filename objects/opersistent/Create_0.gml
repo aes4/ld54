@@ -26,4 +26,5 @@ mlx = 0  // map lower x, upper x, lower y ...
 mux = 0
 mly = 0
 muy = 0
+rdir = 2
 randomize()

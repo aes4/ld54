@@ -47,6 +47,24 @@ for (i = 0; i < array_length(opersistent.rooms); i++) {
 				instance_create_layer(random_range(256, 2112 - 256), random_range(256, 1412 - 256), opersistent.ly, ospider)
 			}
 		}
+		switch opersistent.rooms[i].block {
+			case 0:
+				instance_create_layer(room_width/2, room_height/2 - 400, opersistent.ly, obar)
+				obar.sprite_index = sbar0
+				break
+			case 1:
+				instance_create_layer(room_width/2 + 700, room_height/2, opersistent.ly, obar)
+				obar.sprite_index = sbar1
+				break
+			case 2:
+				instance_create_layer(room_width/2, room_height/2 + 400, opersistent.ly, obar)
+				obar.sprite_index = sbar2
+				break
+			case 3:
+				instance_create_layer(room_width/2 - 700, room_height/2, opersistent.ly, obar)
+				obar.sprite_index = sbar3
+				break
+		}
 	}
 }
 if !opersistent.walked {
@@ -55,6 +73,89 @@ if !opersistent.walked {
 			opersistent.r.spiders += 1
 			instance_create_layer(random_range(256, 2112 - 256), random_range(256, 1412 - 256), opersistent.ly, ospider)
 		}
+	}
+	if round(random_range(1, 18)) == 3 {
+		instance_create_layer(room_width/2, room_height/2, opersistent.ly, oped)
+		instance_create_layer(room_width/2, room_height/2 - 40, opersistent.ly, omushroom)
+	}
+	var pls = round(random_range(1, 4))
+	switch opersistent.rdir {
+		case 0:
+			switch pls {
+				case 2:
+					instance_create_layer(room_width/2 + 700, room_height/2, opersistent.ly, obar)
+					obar.sprite_index = sbar1
+					opersistent.r.bar = 1
+					break
+				case 3:
+					instance_create_layer(room_width/2, room_height/2 + 400, opersistent.ly, obar)
+					obar.sprite_index = sbar2
+					opersistent.r.bar = 2
+					break
+				case 4:
+					instance_create_layer(room_width/2 - 700, room_height/2, opersistent.ly, obar)
+					obar.sprite_index = sbar3
+					opersistent.r.bar = 3
+					break
+			}
+			break
+		case 1:
+			switch pls {
+				case 2:
+					instance_create_layer(room_width/2, room_height/2 + 400, opersistent.ly, obar)
+					obar.sprite_index = sbar2
+					opersistent.r.bar = 2
+					break
+				case 3:
+					instance_create_layer(room_width/2 - 700, room_height/2, opersistent.ly, obar)
+					obar.sprite_index = sbar3
+					opersistent.r.bar = 3
+					break
+				case 4:
+					instance_create_layer(room_width/2, room_height/2 - 400, opersistent.ly, obar)
+					obar.sprite_index = sbar0
+					opersistent.r.bar = 0
+					break
+			}
+			break
+		case 2:
+			switch pls {
+				case 2:
+					instance_create_layer(room_width/2 - 700, room_height/2, opersistent.ly, obar)
+					obar.sprite_index = sbar3
+					opersistent.r.bar = 3
+					break
+				case 3:
+					instance_create_layer(room_width/2, room_height/2 - 400, opersistent.ly, obar)
+					obar.sprite_index = sbar0
+					opersistent.r.bar = 0
+					break
+				case 4:
+					instance_create_layer(room_width/2 + 700, room_height/2, opersistent.ly, obar)
+					obar.sprite_index = sbar1
+					opersistent.r.bar = 1
+					break
+			}
+			break
+		case 3:
+			switch pls {
+				case 2:
+					instance_create_layer(room_width/2, room_height/2 - 400, opersistent.ly, obar)
+					obar.sprite_index = sbar0
+					opersistent.r.bar = 0
+					break
+				case 3:
+					instance_create_layer(room_width/2 + 700, room_height/2, opersistent.ly, obar)
+					obar.sprite_index = sbar1
+					opersistent.r.bar = 1
+					break
+				case 4:
+					instance_create_layer(room_width/2, room_height/2 + 400, opersistent.ly, obar)
+					obar.sprite_index = sbar2
+					opersistent.r.bar = 2
+					break
+			}
+			break
 	}
 }
 //instance_create_layer(0, 0, opersistent.ly, odebug)

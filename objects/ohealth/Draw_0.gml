@@ -1,0 +1,1 @@
+draw_healthbar(256, 256, 256 + 50, 256 + 10, oplayer.hp, c_black, c_red, c_lime, 0, true, true)
