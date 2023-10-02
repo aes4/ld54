@@ -74,7 +74,7 @@ if !opersistent.walked {
 			instance_create_layer(random_range(256, 2112 - 256), random_range(256, 1412 - 256), opersistent.ly, ospider)
 		}
 	}
-	if round(random_range(1, 18)) == 3 {
+	if round(random_range(1, 25)) == 3 {
 		instance_create_layer(room_width/2, room_height/2, opersistent.ly, oped)
 		instance_create_layer(room_width/2, room_height/2 - 40, opersistent.ly, omushroom)
 	}

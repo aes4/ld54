@@ -22,6 +22,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"rsettings","order":1,"path":"rooms/rsettings/rsettings.yy",},
+    {"name":"ospeedpotion","order":26,"path":"objects/ospeedpotion/ospeedpotion.yy",},
     {"name":"rend1","order":4,"path":"rooms/rend1/rend1.yy",},
     {"name":"stitle","order":31,"path":"sprites/stitle/stitle.yy",},
     {"name":"rgame2","order":3,"path":"rooms/rgame2/rgame2.yy",},
@@ -35,7 +36,9 @@
     {"name":"omushroom","order":19,"path":"objects/omushroom/omushroom.yy",},
     {"name":"osides","order":7,"path":"objects/osides/osides.yy",},
     {"name":"sbar3","order":37,"path":"sprites/sbar3/sbar3.yy",},
+    {"name":"ohealthpotion","order":25,"path":"objects/ohealthpotion/ohealthpotion.yy",},
     {"name":"splayerd","order":15,"path":"sprites/splayerd/splayerd.yy",},
+    {"name":"ovol","order":24,"path":"objects/ovol/ovol.yy",},
     {"name":"swall2","order":13,"path":"sprites/swall2/swall2.yy",},
     {"name":"stopend","order":10,"path":"sprites/stopend/stopend.yy",},
     {"name":"obsettings","order":3,"path":"objects/obsettings/obsettings.yy",},
@@ -68,6 +71,7 @@
     {"name":"obottomend","order":9,"path":"objects/obottomend/obottomend.yy",},
     {"name":"oactive","order":3,"path":"objects/oactive/oactive.yy",},
     {"name":"send2","order":34,"path":"sprites/send2/send2.yy",},
+    {"name":"sspeedpotion","order":39,"path":"sprites/sspeedpotion/sspeedpotion.yy",},
     {"name":"owall3","order":13,"path":"objects/owall3/owall3.yy",},
     {"name":"sclawl","order":21,"path":"sprites/sclawl/sclawl.yy",},
     {"name":"sbar0","order":30,"path":"sprites/sbar0/sbar0.yy",},
@@ -90,5 +94,6 @@
     {"name":"obar","order":18,"path":"objects/obar/obar.yy",},
     {"name":"rend2","order":5,"path":"rooms/rend2/rend2.yy",},
     {"name":"sbackground","order":2,"path":"sprites/sbackground/sbackground.yy",},
+    {"name":"shealthpotion","order":38,"path":"sprites/shealthpotion/shealthpotion.yy",},
   ],
 }

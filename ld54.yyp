@@ -39,6 +39,7 @@
   },
   "resources": [
     {"id":{"name":"rsettings","path":"rooms/rsettings/rsettings.yy",},},
+    {"id":{"name":"ospeedpotion","path":"objects/ospeedpotion/ospeedpotion.yy",},},
     {"id":{"name":"rend1","path":"rooms/rend1/rend1.yy",},},
     {"id":{"name":"stitle","path":"sprites/stitle/stitle.yy",},},
     {"id":{"name":"rgame2","path":"rooms/rgame2/rgame2.yy",},},
@@ -52,7 +53,9 @@
     {"id":{"name":"omushroom","path":"objects/omushroom/omushroom.yy",},},
     {"id":{"name":"osides","path":"objects/osides/osides.yy",},},
     {"id":{"name":"sbar3","path":"sprites/sbar3/sbar3.yy",},},
+    {"id":{"name":"ohealthpotion","path":"objects/ohealthpotion/ohealthpotion.yy",},},
     {"id":{"name":"splayerd","path":"sprites/splayerd/splayerd.yy",},},
+    {"id":{"name":"ovol","path":"objects/ovol/ovol.yy",},},
     {"id":{"name":"swall2","path":"sprites/swall2/swall2.yy",},},
     {"id":{"name":"stopend","path":"sprites/stopend/stopend.yy",},},
     {"id":{"name":"sclear","path":"sprites/sclear/sclear.yy",},},
@@ -88,6 +91,7 @@
     {"id":{"name":"oactive","path":"objects/oactive/oactive.yy",},},
     {"id":{"name":"oplayer","path":"objects/oplayer/oplayer.yy",},},
     {"id":{"name":"send2","path":"sprites/send2/send2.yy",},},
+    {"id":{"name":"sspeedpotion","path":"sprites/sspeedpotion/sspeedpotion.yy",},},
     {"id":{"name":"obdecvol","path":"objects/obdecvol/obdecvol.yy",},},
     {"id":{"name":"owall3","path":"objects/owall3/owall3.yy",},},
     {"id":{"name":"sclawl","path":"sprites/sclawl/sclawl.yy",},},
@@ -113,6 +117,7 @@
     {"id":{"name":"obar","path":"objects/obar/obar.yy",},},
     {"id":{"name":"rend2","path":"rooms/rend2/rend2.yy",},},
     {"id":{"name":"sbackground","path":"sprites/sbackground/sbackground.yy",},},
+    {"id":{"name":"shealthpotion","path":"sprites/shealthpotion/shealthpotion.yy",},},
     {"id":{"name":"rmainmenu","path":"rooms/rmainmenu/rmainmenu.yy",},},
   ],
   "RoomOrderNodes": [
