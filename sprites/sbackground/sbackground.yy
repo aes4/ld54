@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sbackground",
-  "bbox_bottom": 63,
+  "bbox_bottom": 899,
   "bbox_left": 0,
-  "bbox_right": 63,
+  "bbox_right": 1599,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1147aa6d-ba19-4356-813f-d05e02724b66",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0e5e84f9-dcc5-4c88-af58-7117181dc2cf",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 64,
+  "height": 900,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e600158d-6abb-4949-94a5-929e78588699","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"64c27b1f-3a85-4f65-9d63-abc35fb7b1e1","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1147aa6d-ba19-4356-813f-d05e02724b66","path":"sprites/sbackground/sbackground.yy",},},},"Disabled":false,"id":"607607b2-f84e-47cb-a33d-614dac6eaa6c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0e5e84f9-dcc5-4c88-af58-7117181dc2cf","path":"sprites/sbackground/sbackground.yy",},},},"Disabled":false,"id":"47215592-cb7a-4277-802a-c114a980c422","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 64,
+  "width": 1600,
 }

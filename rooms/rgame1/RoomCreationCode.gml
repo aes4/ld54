@@ -1,15 +1,16 @@
+opersistent.ly = "l1"
 switch opersistent.left {
 	case 0:
-		instance_create_layer(room_width/2, room_height - 256, "l1", oplayer)
+		instance_create_layer(room_width/2, room_height - 256, opersistent.ly, oplayer)
 		break
 	case 1:
-		instance_create_layer(256, room_height/2, "l1", oplayer)
+		instance_create_layer(256, room_height/2, opersistent.ly, oplayer)
 		break
 	case 2:
-		instance_create_layer(room_width/2, 256, "l1", oplayer)
+		instance_create_layer(room_width/2, 256, opersistent.ly, oplayer)
 		break
 	case 3:
-		instance_create_layer(room_width - 256, room_height/2, "l1", oplayer)
+		instance_create_layer(room_width - 256, room_height/2, opersistent.ly, oplayer)
 		break
 }
 opersistent.walked = false
@@ -41,6 +42,19 @@ for (i = 0; i < array_length(opersistent.rooms); i++) {
 			owall3.x = 1184 - 256
 			owall3.y = 256
 		}
+		if opersistent.rooms[i].spiders > 0 {
+			for (u = 0; u < opersistent.rooms[i].spiders; u++) {
+				instance_create_layer(random_range(256, 2112 - 256), random_range(256, 1412 - 256), opersistent.ly, ospider)
+			}
+		}
 	}
 }
-//instance_create_layer(0, 0, "l1", odebug)
+if !opersistent.walked {
+	if round(random_range(1, 6)) == 2 {
+		for (u = 0; u < random_range(1, 7); u++) {
+			opersistent.r.spiders += 1
+			instance_create_layer(random_range(256, 2112 - 256), random_range(256, 1412 - 256), opersistent.ly, ospider)
+		}
+	}
+}
+//instance_create_layer(0, 0, opersistent.ly, odebug)
