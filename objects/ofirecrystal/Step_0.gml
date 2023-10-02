@@ -1,4 +1,4 @@
 if place_meeting(x, y, oplayer) {
-	oplayer.fire = true
+	opersistent.fire = true
 	instance_destroy(self)
 }

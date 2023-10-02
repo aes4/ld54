@@ -16,6 +16,7 @@ if (keyboard_check(ord("W"))) {
 				t: opersistent.r.t,
 				block: opersistent.r.block,
 				spiders: opersistent.r.spiders,
+				ped: opersistent.r.ped,
 				items: opersistent.r.items,
 				decor: opersistent.r.decor
 				}
@@ -27,6 +28,7 @@ if (keyboard_check(ord("W"))) {
 					opersistent.rooms[i].t = opersistent.r.t
 					opersistent.rooms[i].block = opersistent.r.block
 					opersistent.rooms[i].spiders = opersistent.r.spiders
+					opersistent.rooms[i].ped = opersistent.r.ped
 					opersistent.rooms[i].items = opersistent.r.items
 				}
 			}
@@ -66,6 +68,7 @@ if (keyboard_check(ord("S"))) {
 				t: opersistent.r.t,
 				block: opersistent.r.block,
 				spiders: opersistent.r.spiders,
+				ped: opersistent.r.ped,
 				items: opersistent.r.items,
 				decor: opersistent.r.decor
 				}
@@ -76,6 +79,7 @@ if (keyboard_check(ord("S"))) {
 					opersistent.rooms[i].t = opersistent.r.t
 					opersistent.rooms[i].block = opersistent.r.block
 					opersistent.rooms[i].spiders = opersistent.r.spiders
+					opersistent.rooms[i].ped = opersistent.r.ped
 					opersistent.rooms[i].items = opersistent.r.items
 				}
 			}
@@ -114,6 +118,7 @@ if (keyboard_check(ord("A"))) {
 				t: opersistent.r.t,
 				block: opersistent.r.block,
 				spiders: opersistent.r.spiders,
+				ped: opersistent.r.ped,
 				items: opersistent.r.items,
 				decor: opersistent.r.decor
 				}
@@ -124,6 +129,7 @@ if (keyboard_check(ord("A"))) {
 					opersistent.rooms[i].t = opersistent.r.t
 					opersistent.rooms[i].block = opersistent.r.block
 					opersistent.rooms[i].spiders = opersistent.r.spiders
+					opersistent.rooms[i].ped = opersistent.r.ped
 					opersistent.rooms[i].items = opersistent.r.items
 				}
 			}
@@ -162,6 +168,7 @@ if (keyboard_check(ord("D"))) {
 				t: opersistent.r.t,
 				block: opersistent.r.block,
 				spiders: opersistent.r.spiders,
+				ped: opersistent.r.ped,
 				items: opersistent.r.items,
 				decor: opersistent.r.decor
 				}
@@ -172,6 +179,7 @@ if (keyboard_check(ord("D"))) {
 					opersistent.rooms[i].t = opersistent.r.t
 					opersistent.rooms[i].block = opersistent.r.block
 					opersistent.rooms[i].spiders = opersistent.r.spiders
+					opersistent.rooms[i].ped = opersistent.r.ped
 					opersistent.rooms[i].items = opersistent.r.items
 				}
 			}
@@ -213,7 +221,7 @@ if (keyboard_check_pressed(ord("F"))) {
 			break
 	}
 }
-if keyboard_check_pressed(ord("R")) && fire {
+if keyboard_check_pressed(ord("R")) && opersistent.fire {
 	switch dir {
 		case 0:
 			instance_create_layer(x, y - 180, opersistent.ly, ofire)
@@ -232,7 +240,7 @@ if keyboard_check_pressed(ord("R")) && fire {
 			ofire.sprite_index = sfirel
 			break
 	}
-	fire = false
+	opersistent.fire = false
 }
 
 // DO NOT HOLD E THEN ENTER ROOM THEN LET GO
@@ -261,7 +269,7 @@ if place_meeting(x, y, owall3) && place_meeting(x, y, owall1) {
 if place_meeting(x, y, owall3) && place_meeting(x, y, owall2) {
 	room_goto(rend1)
 }
-if hp < 0 {
+if opersistent.hp < 0 {
 	room_goto(rend1)
 }
 // if destroy enemy opersistent.r.enemies remove from array? and room creation code adds enemies to opers.r.enemies/items/decor

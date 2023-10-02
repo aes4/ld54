@@ -10,6 +10,7 @@ r = {
 	t: 0,  // room closes in if you are in it and if you go back, t = time
 	block: 0,  // maze dead end 0 (top) 1 (right) 2 3
 	spiders: 0,
+	ped: false,
 	items: [],  // items are placed at center of room
 	decor: []  // list of structs
 }
@@ -27,4 +28,6 @@ mux = 0
 mly = 0
 muy = 0
 rdir = 2
+fire = false
+hp = 100
 randomize()

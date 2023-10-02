@@ -7,7 +7,7 @@ if place_meeting(x, y, ofire) {
 	hp -= 30
 }
 if place_meeting(x, y, oplayer) {
-	oplayer.hp -= 0.5
+	opersistent.hp -= 0.5
 }
 if hp <= 0 {
 	opersistent.r.spiders -= 1

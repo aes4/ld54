@@ -1,4 +1,4 @@
 if place_meeting(x, y, oplayer) {
-	oplayer.hp += 50
+	opersistent.hp += 30
 	instance_destroy(self)
 }
